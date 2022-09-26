@@ -8,7 +8,6 @@
 
 Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
 
-Blog - https://blog.chetanverma.com/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
 
 ### Features - 
 
@@ -70,7 +69,6 @@ If you liked this portfolio template, don't forget to give it a ⭐.
 ## Supporting
 Many hours of hard work have gone into this project. Your support will be very appreciated!
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
 
 
 

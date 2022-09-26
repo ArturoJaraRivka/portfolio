@@ -1,10 +1,16 @@
-import { Popover } from "@headlessui/react";
-import { useTheme } from "next-themes";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import Button from "../Button";
+import React, {
+  useEffect,
+  useState,
+} from 'react';
+
+import { useTheme } from 'next-themes';
+import { useRouter } from 'next/router';
+
+import { Popover } from '@headlessui/react';
+
 // Local Data
-import data from "../../data/portfolio.json";
+import data from '../../data/portfolio.json';
+import Button from '../Button';
 
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
@@ -75,20 +81,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   {showResume && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Resume
-                    </Button>
+                 
                   )}
 
-                  <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
-                  >
-                    Contact
-                  </Button>
+               
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
@@ -107,11 +103,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     </Button>
                   )}
 
-                  <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
-                  >
-                    Contact
-                  </Button>
+              
                 </div>
               )}
             </Popover.Panel>
@@ -145,9 +137,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
-            </Button>
+         
             {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -174,9 +164,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
-            </Button>
+        
 
             {mounted && theme && data.darkMode && (
               <Button
